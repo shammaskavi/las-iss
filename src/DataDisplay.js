@@ -65,7 +65,7 @@ const DataDisplay = () => {
 
   const addReward = () => {
     const studentData = filteredData[0];
-    const name = studentData.name;
+    const name = studentData.name.split(" ").join("");
     const usn = studentData.usn;
     const dept = studentData.department.replace(/&/g, "%26");
     // CHANGE THE BASE LINK
@@ -75,7 +75,15 @@ const DataDisplay = () => {
     console.log(typeof name);
     console.log(dept);
     console.log("Normal department" + studentData.department);
-    return baseLink;
+    console.log(name);
+
+    const adminPassword = prompt("Enter the password ");
+
+    if (adminPassword === "fireafrozsir") {
+      window.location.href = baseLink;
+    } else {
+      alert("Don't poke where you're not supposed to 🌚");
+    }
   };
 
   return (
