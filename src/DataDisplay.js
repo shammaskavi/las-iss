@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { Box, Card, Flex, Heading, Text, Button } from "rebass";
+import { Box, Flex} from "rebass";
 
 import "./App.css";
 import { MagnifyingGlass } from "react-loader-spinner";
@@ -46,22 +46,22 @@ const DataDisplay = () => {
     setFilteredData(filtered);
   }, [id, data]);
 
-  const handleSearchChange = (event) => {
-    const inputId = event.target.value;
-    setSearchId(inputId);
+  // const handleSearchChange = (event) => {
+  //   const inputId = event.target.value;
+  //   setSearchId(inputId);
 
-    if (!inputId) {
-      setFilteredData(data); // Reset to all data when the search bar is empty
-    } else {
-      const filtered = data.filter(
-        (item) => item.usn.toLowerCase() === inputId.toLowerCase()
-      );
-      console.log("Filtered Data:", filtered); // Check the filtered data in the console
-      setFilteredData(filtered);
-      return filtered;
-      console.log(typeof filtered);
-    }
-  };
+  //   if (!inputId) {
+  //     setFilteredData(data); // Reset to all data when the search bar is empty
+  //   } else {
+  //     const filtered = data.filter(
+  //       (item) => item.usn.toLowerCase() === inputId.toLowerCase()
+  //     );
+  //     console.log("Filtered Data:", filtered); // Check the filtered data in the console
+  //     setFilteredData(filtered);
+  //     return filtered;
+  //     console.log(typeof filtered);
+  //   }
+  // };
 
   const addReward = () => {
     const studentData = filteredData[0];

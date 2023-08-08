@@ -1,6 +1,5 @@
 import React from "react";
-import { ColorRing } from "react-loader-spinner";
-import { Button, Card, Flex, Heading, Link, Text } from "rebass";
+import { Button, Card, Flex, Text } from "rebass";
 
 function StudentCard({ name, usn, dept, count, link, handleReward }) {
   return (
@@ -38,14 +37,18 @@ function StudentCard({ name, usn, dept, count, link, handleReward }) {
         <strong>Score:</strong> {count}
       </Text>
       <Flex justifyContent="center" mt={3}>
-        <a target="_blank" rel="noopener noreferrer">
-          <Button style={{
+        {/* <a target="_blank" rel="noopener noreferrer"> */}
+        <Button
+          style={{
             backgroundColor: "white",
-            color: "black"
-          }} onClick={handleReward} variant="secondary">
-            Reward Student
-          </Button>
-        </a>
+            color: "black",
+          }}
+          onClick={handleReward}
+          variant="secondary"
+        >
+          Reward Student
+        </Button>
+        {/* </a> */}
       </Flex>
     </Card>
   );

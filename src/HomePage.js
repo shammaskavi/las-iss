@@ -1,8 +1,7 @@
 import React, { useContext, useState } from "react";
-import { Box, Card, Flex, Heading, Text, Button } from "rebass";
+import { Box, Heading } from "rebass";
 import { Input } from "@rebass/forms";
 import { DataContext } from "./context/DataContent";
-import { MagnifyingGlass } from "react-loader-spinner";
 import StudentCard from "./StudentCard";
 
 const HomePage = () => {
@@ -58,7 +57,7 @@ const HomePage = () => {
               const studentData = searchResult.data[0];
               const name = studentData.name.split(" ").join("");
               const usn = studentData.usn;
-              const dept = studentData.department.replace(/&/g, "%26");
+              // const dept = studentData.department.replace(/&/g, "%26");
               const adminPassword = prompt("Enter the password");
               const baseLink = `https://docs.google.com/forms/d/e/1FAIpQLSctaDI3JDAJRCRvn4S3J1r-Fovts71P0yYNmcunTFHI44jQaA/formResponse?usp=pp_url&entry.195016870=${usn}&entry.2059370101=${name}&entry.1986016935=AI%26ML&submit=Submit`;
               if (adminPassword === "fireafrozsir") {
