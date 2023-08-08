@@ -51,8 +51,8 @@ const HomePage = () => {
             key={searchResult.data[0].index}
             name={searchResult.data[0].name}
             usn={searchResult.data[0].usn}
-            dept={searchResult.data[0].usn}
-            count={searchResult.length}
+            dept={searchResult.data[0].department}
+            count={searchResult.data.length}
             handleReward={() => {
               const studentData = searchResult.data[0];
               const name = studentData.name.split(" ").join("");
