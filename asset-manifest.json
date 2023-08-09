@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/las-iss/static/css/main.20c7ea9d.css",
-    "main.js": "/las-iss/static/js/main.43d25a5f.js",
+    "main.js": "/las-iss/static/js/main.b10f98f5.js",
     "static/js/787.795d05ac.chunk.js": "/las-iss/static/js/787.795d05ac.chunk.js",
     "index.html": "/las-iss/index.html",
     "main.20c7ea9d.css.map": "/las-iss/static/css/main.20c7ea9d.css.map",
-    "main.43d25a5f.js.map": "/las-iss/static/js/main.43d25a5f.js.map",
+    "main.b10f98f5.js.map": "/las-iss/static/js/main.b10f98f5.js.map",
     "787.795d05ac.chunk.js.map": "/las-iss/static/js/787.795d05ac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.20c7ea9d.css",
-    "static/js/main.43d25a5f.js"
+    "static/js/main.b10f98f5.js"
   ]
 }
